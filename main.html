@@ -1,0 +1,121 @@
+<html>
+<head>
+<body bgcolor="#FFFFE0">
+<div align="center"><img src="lic.jpg" alt="lic" height="100" width="100"></div>
+<h1><center>LIC FORM<center></h1>
+<style>
+img {
+border-radius: 50%;
+align:center;
+}
+</style>
+
+</head>
+
+
+<script>
+function myFunction() {
+  
+  let x = document.getElementById("fname").value;
+  if (x == "") {
+    alert("Fill the fields correctly");
+return false;
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+
+
+
+<br><fieldset>
+  <form action="/action_page.php" method="get">
+
+<table align="left">
+<tr><td>Branch Office:</td>
+<td><input type="text" id="fname" name="bname" align="left"></td>
+ <td>Agent's name:</td>
+  <td>
+  <input type="text" id="lname" name="aname" align="left"></td></tr>
+<tr><td>Licence no:</td>
+<td><input type="number" id="lno" name="lno" align="left"></td>
+ <td>Licence expiry date:</td>
+<td>
+  <input type="date" id="ename" name="bname" align="center"></td></tr>
+<tr><td>Code no:</td>
+<td><input type="number" id="cname" name="aname" align="center"></td>
+ <td>Divisional office:</td>
+  <td>
+  <input type="text" id="dno" name="lno" align="center"></td></tr>
+</fieldset>
+
+
+
+<tr>
+<td>Full Name(max 40 char):</td>
+<td><input type="text" id="full" name="full" align="left"></td></tr>
+<tr><td>Father's Name:</td>
+<td><input type="text" id="fat" name="fat" align="left"></td>
+</tr>
+<tr>
+<td>Name for printing on health card:</td>
+<td><input type="text" id="hc" name="hc" align="left"  maxlength="40" size="30"></td>
+<td>Nationality:</td>
+<td><input type="text" id="nat" align="center"></td>
+</tr>
+<tr>
+<td>Email id:</td>
+<td><input type="email" id="em" align="left" maxlength="100" size="50"></td>
+</tr>
+<tr>
+<td>Age proof:</td>
+<td><input type="text" id="agep" align="left"></td>
+<td>Age:</td>
+<td><input type="number" id="age" align="center"></td>
+<td>Date of Birth:</td>
+<td><input type="date" id="agep" align="right"></td>
+</tr>
+<tr>
+<td>City:</td>
+<td><input type="text" id="city" align="left"></td>
+
+
+<td>State:</td>
+<td><input type="text" id="st" align="center"></td>
+<td>Country:</td>
+<td><input type="text" id="co" align="right"></td>
+</tr>
+<tr>
+<td>Telephone number:</td>
+<td><input type="tel" id="tp" align="right" ></td>
+</tr>
+<tr>
+<td>Gender:</td>
+
+<td><input type="radio" id="male" align="left"></td>
+<td>male</td>
+<td><input type="radio" id="female" align="left"></td>
+<td>female</td>
+<td><input type="radio" id="ot" align="left"></td>
+<td>Others</td>
+
+</tr>
+<tr>
+
+
+
+  </table> 
+
+
+<p id="demo"></p>
+
+
+</form>
+<button type="button" onclick="myFunction()" align="right" >Submit</button>
+<input type="reset" align="right">
+
+
+</body>
+</html>
